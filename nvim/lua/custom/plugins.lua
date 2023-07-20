@@ -1,7 +1,10 @@
 local plugins = {
   {
+    "christoomey/vim-tmux-navigator",
+    lazy = false,
+  },
+  {
     "neovim/nvim-lspconfig",
-
     dependencies = {
       "jose-elias-alvarez/null-ls.nvim",
       config = function()
@@ -102,7 +105,22 @@ local plugins = {
   --   { "<leader>tO", function() require("neotest").output_panel.toggle() end, desc = "Toggle Output Panel" },
   --   { "<leader>tS", function() require("neotest").run.stop() end, desc = "Stop" },
   -- },
-  }
+  },
+  {
+  'Exafunction/codeium.vim',
+  lazy = false,
+  config = function ()
+    -- Change '<C-g>' here to any keycode you like.
+  end
+  },
+  {
+    "iamcco/markdown-preview.nvim",
+    ft = "markdown",
+    event = "BufRead",
+    config = function()
+      vim.fn["mkdp#util#install"]()
+    end,
+  },
 }
 
 return plugins

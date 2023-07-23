@@ -27,6 +27,14 @@ M.neotest = {
   },
 }
 
+M.trouble = {
+  n = {
+    ["<leader>dX"] = { "<cmd> TroubleToggle workspace_diagnostics<CR>", "Workspace Diagnostics" },
+    ["<leader>dx"] = { "<cmd> TroubleToggle document_diagnostics<CR>", "Document Diagnostics" },
+    ["<leader>dq"] = { "<cmd> TroubleToggle quickfix<CR>", "Quickfix List (Trouble)" },
+  }
+}
+
 M.codeium = {
   i = {
     ['<C-g>'] = {function () return vim.fn['codeium#Accept']() end},

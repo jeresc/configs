@@ -4,6 +4,7 @@ return {
     ensure_installed = {
       "emmet-language-server",
       "prisma-language-server",
+      "prettierd",
     },
   },
 }

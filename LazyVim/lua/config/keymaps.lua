@@ -14,3 +14,11 @@ end, { desc = "Codeuim Autocomplete", expr = true })
 vim.keymap.set("n", "<C-n>", function()
   require("neo-tree.command").execute({ toggle = true, dir = vim.loop.cwd() })
 end, { desc = "Toggle NeoTree" })
+
+vim.keymap.set("n", "<C-h>", function()
+  require("harpoon.ui").toggle_quick_menu()
+end, { desc = "Harpoon menu" })
+
+vim.keymap.set("n", "<C-a>", function()
+  require("harpoon.mark").add_file()
+end, { desc = "Harpoon file" })

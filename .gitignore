@@ -5,6 +5,7 @@
 !LazyVim
 !tmux
 tmux/plugins
+!.zshrc
 
 !.gitignore
 

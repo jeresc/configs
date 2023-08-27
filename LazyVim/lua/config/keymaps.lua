@@ -15,10 +15,26 @@ vim.keymap.set("n", "<C-n>", function()
   require("neo-tree.command").execute({ toggle = true, dir = vim.loop.cwd() })
 end, { desc = "Toggle NeoTree" })
 
-vim.keymap.set("n", "<C-h>", function()
+vim.keymap.set("n", "<C-e>", function()
   require("harpoon.ui").toggle_quick_menu()
 end, { desc = "Harpoon menu" })
 
-vim.keymap.set("n", "<C-a>", function()
+vim.keymap.set("n", "<leader>a", function()
   require("harpoon.mark").add_file()
 end, { desc = "Harpoon file" })
+
+vim.keymap.set("n", "<C-a>", function()
+  require("harpoon.ui").nav_file(1)
+end, { desc = "1st file harpooned" })
+
+vim.keymap.set("n", "<C-d>", function()
+  require("harpoon.ui").nav_file(2)
+end, { desc = "2nd file harpooned" })
+
+vim.keymap.set("n", "<C-j>", function()
+  require("harpoon.ui").nav_file(3)
+end, { desc = "3rd file harpooned" })
+
+vim.keymap.set("n", "<C-l>", function()
+  require("harpoon.ui").nav_file(4)
+end, { desc = "4th file harpooned" })

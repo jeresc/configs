@@ -7,11 +7,4 @@ return {
   config = function()
     require("harpoon").setup()
   end,
-  keys = {
-    { "<leader>1", "<cmd>lua require('harpoon.ui').nav_file(1)<CR>", desc = "1st file harpooned" },
-    { "<leader>2", "<cmd>lua require('harpoon.ui').nav_file(2)<CR>", desc = "2nd file harpooned" },
-    { "<leader>3", "<cmd>lua require('harpoon.ui').nav_file(3)<CR>", desc = "3rd file harpooned" },
-    { "<leader>4", "<cmd>lua require('harpoon.ui').nav_file(4)<CR>", desc = "4th file harpooned" },
-    { "<leader>5", "<cmd>lua require('harpoon.ui').nav_file(5)<CR>", desc = "5th file harpooned" },
-  },
 }

@@ -35,6 +35,18 @@ vim.keymap.set("n", "<C-j>", function()
   require("harpoon.ui").nav_file(3)
 end, { desc = "3rd file harpooned" })
 
-vim.keymap.set("n", "<C-l>", function()
+vim.keymap.set("n", "<C-k>", function()
   require("harpoon.ui").nav_file(4)
 end, { desc = "4th file harpooned" })
+
+vim.keymap.set("n", "<leader>gw", function()
+  require("telescope").extensions.git_worktree.git_worktrees()
+end, { desc = "Switch or Delete Git Worktrees" })
+
+vim.keymap.set("n", "<leader>ga", function()
+  require("telescope").extensions.git_worktree.create_git_worktree()
+end, { desc = "Create Git Worktree" })
+
+vim.keymap.set("n", "<leader>h", function()
+  require("twilight").toggle()
+end, { desc = "Toggle Twilight" })

@@ -1,7 +1,8 @@
 /*
 
+alacritty/themes
 !alacritty
-alacritty/themes/*
+
 !nvim
 !NvChad
 !LazyVim

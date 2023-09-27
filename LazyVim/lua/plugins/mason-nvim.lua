@@ -6,6 +6,8 @@ return {
         "emmet-language-server",
         "prisma-language-server",
         "prettierd",
+        "astro-language-server",
+        "gopls",
       })
     end
   end,

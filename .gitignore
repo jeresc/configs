@@ -1,11 +1,14 @@
 /*
 
+!alacritty
+alacritty/themes/*
 !nvim
 !NvChad
 !LazyVim
 !tmux
 tmux/plugins
 !.zshrc
+!spaceship.zsh
 
 !.gitignore
 

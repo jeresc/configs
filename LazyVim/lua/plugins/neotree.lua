@@ -7,6 +7,7 @@ return {
       icon = {
         folder_closed = "",
         folder_open = "",
+        folder_empty = "",
         highlight = "NeoTreeFileIcon",
       },
     },

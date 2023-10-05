@@ -50,3 +50,5 @@ end, { desc = "Create Git Worktree" })
 vim.keymap.set("n", "<leader>h", function()
   require("twilight").toggle()
 end, { desc = "Toggle Twilight" })
+
+vim.keymap.set("n", "<leader>md", "<cmd> MarkdownPreviewToggle<CR>", { desc = "Toggle Markdown Preview" })

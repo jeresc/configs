@@ -12,6 +12,7 @@ tmux/plugins
 !LazyVim
 !.zshrc
 !spaceship.zsh
+!spaceship
 
 !.gitignore
 

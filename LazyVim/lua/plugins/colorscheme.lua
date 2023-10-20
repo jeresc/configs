@@ -1,7 +1,6 @@
 return {
   { "Shatur/neovim-ayu" },
   { "ellisonleao/gruvbox.nvim" },
-  { "safv12/andromeda.vim" },
   { "catppuccin/nvim", as = "catppuccin" },
   { "sainnhe/gruvbox-material" },
   {

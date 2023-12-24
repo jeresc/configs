@@ -52,3 +52,5 @@ vim.keymap.set("n", "<leader>h", function()
 end, { desc = "Toggle Twilight" })
 
 vim.keymap.set("n", "<leader>md", "<cmd> MarkdownPreviewToggle<CR>", { desc = "Toggle Markdown Preview" })
+
+vim.keymap.set("x", "<leader>p", '"_dP', { desc = "Paste without yank" })

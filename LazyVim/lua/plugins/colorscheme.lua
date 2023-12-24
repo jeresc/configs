@@ -3,6 +3,7 @@ return {
   { "ellisonleao/gruvbox.nvim" },
   { "catppuccin/nvim", as = "catppuccin" },
   { "sainnhe/gruvbox-material" },
+  { "folke/tokyonight.nvim" },
   {
     "navarasu/onedark.nvim",
     -- opts = {
@@ -16,7 +17,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "ayu-mirage",
+      colorscheme = "tokyonight",
     },
   },
 }

@@ -31,11 +31,11 @@ vim.keymap.set("n", "<C-d>", function()
   require("harpoon.ui").nav_file(2)
 end, { desc = "2nd file harpooned" })
 
-vim.keymap.set("n", "<C-j>", function()
+vim.keymap.set("n", "<C-u>", function()
   require("harpoon.ui").nav_file(3)
 end, { desc = "3rd file harpooned" })
 
-vim.keymap.set("n", "<C-k>", function()
+vim.keymap.set("n", "<C-p>", function()
   require("harpoon.ui").nav_file(4)
 end, { desc = "4th file harpooned" })
 

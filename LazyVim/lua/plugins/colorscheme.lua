@@ -2,7 +2,6 @@ return {
   { "Shatur/neovim-ayu" },
   { "ellisonleao/gruvbox.nvim" },
   { "catppuccin/nvim", as = "catppuccin" },
-  { "sainnhe/gruvbox-material" },
   { "folke/tokyonight.nvim" },
   {
     "navarasu/onedark.nvim",

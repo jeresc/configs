@@ -1,9 +1,14 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
   opts = {
+    indent = {},
     sources = { "filesystem", "buffers", "git_status", "document_symbols" },
     open_files_do_not_replace_types = { "terminal", "Trouble", "qf", "Outline" },
     default_component_configs = {
+      indent = {
+        indent_size = 2,
+        padding = 0,
+      },
       icon = {
         folder_closed = "",
         folder_open = "",
@@ -13,6 +18,7 @@ return {
     },
     window = {
       position = "right",
+      width = 25,
     },
     filesystem = {
       filtered_items = {

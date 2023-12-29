@@ -62,3 +62,10 @@ end, { desc = "Open all folds" })
 vim.keymap.set("n", "zM", function()
   require("ufo").closeAllFolds()
 end, { desc = "Close all folds" })
+
+vim.keymap.set("n", "K", function()
+  local winid = require("ufo").peekFoldedLinesUnderCursor()
+  if not winid then
+    vim.lsp.buf.hover()
+  end
+end)

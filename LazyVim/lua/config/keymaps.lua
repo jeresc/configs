@@ -54,3 +54,11 @@ end, { desc = "Toggle Twilight" })
 vim.keymap.set("n", "<leader>md", "<cmd> MarkdownPreviewToggle<CR>", { desc = "Toggle Markdown Preview" })
 
 vim.keymap.set("x", "<leader>p", '"_dP', { desc = "Paste without yank" })
+
+vim.keymap.set("n", "zR", function()
+  require("ufo").openAllFolds()
+end, { desc = "Open all folds" })
+
+vim.keymap.set("n", "zM", function()
+  require("ufo").closeAllFolds()
+end, { desc = "Close all folds" })

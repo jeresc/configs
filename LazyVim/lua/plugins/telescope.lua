@@ -1,11 +1,9 @@
 return {
   "telescope.nvim",
   dependencies = {
-    "theprimeagen/git-worktree.nvim",
-    "nvim-telescope/telescope-media-files.nvim",
+    { "theprimeagen/git-worktree.nvim" },
   },
-  config = function()
+  opts = function()
     require("telescope").load_extension("git_worktree")
-    require("telescope").load_extension("media_files")
   end,
 }

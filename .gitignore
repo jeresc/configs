@@ -14,5 +14,11 @@ tmux/plugins
 !spaceship.zsh
 !spaceship
 
+!zsh
+
+!wezterm
+
+!starship
+
 !.gitignore
 

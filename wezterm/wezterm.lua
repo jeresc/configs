@@ -139,6 +139,15 @@ return {
 		},
 	},
 
+	mouse_bindings = {
+		-- Ctrl-click will open the link under the mouse cursor
+		{
+			event = { Up = { streak = 1, button = "Left" } },
+			mods = "CTRL",
+			action = wezterm.action.OpenLinkAtMouseCursor,
+		},
+	},
+
 	-- Aesthetic Night Colorscheme
 	bold_brightens_ansi_colors = true,
 	-- Padding
@@ -150,7 +159,7 @@ return {
 	},
 
 	-- Tab Bar
-	enable_tab_bar = true,
+	enable_tab_bar = false,
 	hide_tab_bar_if_only_one_tab = true,
 	show_tab_index_in_tab_bar = false,
 	tab_bar_at_bottom = true,

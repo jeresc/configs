@@ -15,29 +15,39 @@ vim.keymap.set("n", "<C-n>", function()
   require("neo-tree.command").execute({ toggle = true, dir = vim.loop.cwd() })
 end, { desc = "Toggle NeoTree" })
 
-vim.keymap.set("n", "<C-e>", function()
-  require("harpoon.ui").toggle_quick_menu()
-end, { desc = "Harpoon menu" })
+local harpoon = require("harpoon")
 
 vim.keymap.set("n", "<leader>a", function()
-  require("harpoon.mark").add_file()
+  harpoon:list():append()
 end, { desc = "Harpoon file" })
 
+vim.keymap.set("n", "<C-e>", function()
+  harpoon.ui:toggle_quick_menu(harpoon:list())
+end, { desc = "Harpoon menu" })
+
 vim.keymap.set("n", "<C-a>", function()
-  require("harpoon.ui").nav_file(1)
+  harpoon:list():select(1)
 end, { desc = "1st file harpooned" })
 
 vim.keymap.set("n", "<C-d>", function()
-  require("harpoon.ui").nav_file(2)
+  harpoon:list():select(2)
 end, { desc = "2nd file harpooned" })
 
 vim.keymap.set("n", "<C-u>", function()
-  require("harpoon.ui").nav_file(3)
+  harpoon:list():select(3)
 end, { desc = "3rd file harpooned" })
 
 vim.keymap.set("n", "<C-p>", function()
-  require("harpoon.ui").nav_file(4)
+  harpoon:list():select(4)
 end, { desc = "4th file harpooned" })
+
+-- Toggle previous & next buffers stored within Harpoon list
+vim.keymap.set("n", "<C-S-P>", function()
+  harpoon:list():prev()
+end)
+vim.keymap.set("n", "<C-S-N>", function()
+  harpoon:list():next()
+end)
 
 vim.keymap.set("n", "<leader>gw", function()
   require("telescope").extensions.git_worktree.git_worktrees()

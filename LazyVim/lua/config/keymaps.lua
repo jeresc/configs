@@ -15,40 +15,6 @@ vim.keymap.set("n", "<C-n>", function()
   require("neo-tree.command").execute({ toggle = true, dir = vim.loop.cwd() })
 end, { desc = "Toggle NeoTree" })
 
-local harpoon = require("harpoon")
-
-vim.keymap.set("n", "<leader>a", function()
-  harpoon:list():append()
-end, { desc = "Harpoon file" })
-
-vim.keymap.set("n", "<C-e>", function()
-  harpoon.ui:toggle_quick_menu(harpoon:list())
-end, { desc = "Harpoon menu" })
-
-vim.keymap.set("n", "<C-a>", function()
-  harpoon:list():select(1)
-end, { desc = "1st file harpooned" })
-
-vim.keymap.set("n", "<C-d>", function()
-  harpoon:list():select(2)
-end, { desc = "2nd file harpooned" })
-
-vim.keymap.set("n", "<C-u>", function()
-  harpoon:list():select(3)
-end, { desc = "3rd file harpooned" })
-
-vim.keymap.set("n", "<C-p>", function()
-  harpoon:list():select(4)
-end, { desc = "4th file harpooned" })
-
--- Toggle previous & next buffers stored within Harpoon list
-vim.keymap.set("n", "<C-S-P>", function()
-  harpoon:list():prev()
-end)
-vim.keymap.set("n", "<C-S-N>", function()
-  harpoon:list():next()
-end)
-
 vim.keymap.set("n", "<leader>gw", function()
   require("telescope").extensions.git_worktree.git_worktrees()
 end, { desc = "Switch or Delete Git Worktrees" })
@@ -73,9 +39,12 @@ vim.keymap.set("n", "zM", function()
   require("ufo").closeAllFolds()
 end, { desc = "Close all folds" })
 
-vim.keymap.set("n", "K", function()
-  local winid = require("ufo").peekFoldedLinesUnderCursor()
-  if not winid then
-    vim.lsp.buf.hover()
-  end
-end)
+-- vim.keymap.set("n", "K", function()
+--   local winid = require("ufo").peekFoldedLinesUnderCursor()
+--   if not winid then
+--     vim.lsp.buf.hover()
+--   end
+-- end)
+
+vim.keymap.set("n", "<M-C-n>", "<cmd>Scratch<cr>", { desc = "Scratch" })
+vim.keymap.set("n", "<M-C-o>", "<cmd>ScratchOpen<cr>", { desc = "Scratch Open" })

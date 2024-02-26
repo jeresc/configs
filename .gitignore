@@ -7,6 +7,8 @@ alacritty/catppuccin
 !tmux
 tmux/plugins
 
+!hypr
+
 !nvim
 !NvChad
 !LazyVim

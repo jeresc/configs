@@ -42,6 +42,7 @@ alias lt="ls --tree"
 alias cat="bat --color always --plain"
 alias grep='grep --color=auto'
 alias mv='mv -v'
+alias md='mkdir -v'
 alias cp='cp -vr'
 alias rm='rm -vr'
 alias commit="git add . && git commit -m"
@@ -223,9 +224,11 @@ alias gupav='git pull --rebase --autostash -v'
 alias gupv='git pull --rebase -v'
 alias gwch='git whatchanged -p --abbrev-commit --pretty=medium'
 alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify --no-gpg-sign -m "--wip-- [skip ci]"'
-alias pn="pnpm"
+alias p="pnpm"
+alias px="pnpm dlx"
 alias v="nvim"
 alias vim="nvim"
 alias lg="lazygit"
+alias t="tmux"
 
 # vim:ft=zsh

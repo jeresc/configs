@@ -36,7 +36,7 @@ alias cleanpac='sudo pacman -Rns $(pacman -Qtdq); paru -c'
 alias installed="grep -i installed /var/log/pacman.log"
 alias ls="exa --color=auto --icons"
 alias l="ls -l"
-alias la="ls -a"
+alias la="ls -la"
 alias lla="ls -la"
 alias lt="ls --tree"
 alias cat="bat --color always --plain"

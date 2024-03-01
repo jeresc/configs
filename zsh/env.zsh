@@ -13,8 +13,8 @@ export GOPATH="$HOME/go"
 export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 
 export SUDO_PROMPT="passwd: "
-export TERMINAL="wezterm"
-export BROWSER="firefox"
+export TERMINAL="alacritty"
+export BROWSER="brave"
 export VISUAL="nvim"
 export EDITOR="nvim"
 

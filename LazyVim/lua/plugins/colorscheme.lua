@@ -5,6 +5,11 @@ return {
   { "folke/tokyonight.nvim" },
   { "oxfist/night-owl.nvim" },
   {
+    "datsfilipe/vesper.nvim",
+  },
+  { "olivercederborg/poimandres.nvim" },
+  -- { "rose-pine/neovim", name = "rose-pine" },
+  {
     "navarasu/onedark.nvim",
     opts = {
       style = "darker",
@@ -18,7 +23,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "night-owl",
+      colorscheme = "vesper",
     },
   },
 }

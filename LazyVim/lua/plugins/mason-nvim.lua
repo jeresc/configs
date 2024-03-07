@@ -8,6 +8,7 @@ return {
         "prettierd",
         "astro-language-server",
         "gopls",
+        "svelte-language-server",
       })
     end
   end,

@@ -46,5 +46,9 @@ end, { desc = "Close all folds" })
 --   end
 -- end)
 
+vim.keymap.set("n", "<space>gb", function()
+  require("gitsigns").toggle_current_line_blame()
+end, { desc = "Toggle current line blame" })
+
 vim.keymap.set("n", "<M-C-n>", "<cmd>Scratch<cr>", { desc = "Scratch" })
 vim.keymap.set("n", "<M-C-o>", "<cmd>ScratchOpen<cr>", { desc = "Scratch Open" })

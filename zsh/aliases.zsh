@@ -8,6 +8,8 @@ alias nvim-kodo="NVIM_APPNAME=kodo nvim"
 
 alias run='pnpm run'
 alias b='bun'
+alias bx='bunx'
+alias bd='bun run dev'
 alias c="clear"
 alias q="exit"
 alias cleanram="sudo sh -c 'sync; echo 3 > /proc/sys/vm/drop_caches'"
@@ -226,6 +228,7 @@ alias gwch='git whatchanged -p --abbrev-commit --pretty=medium'
 alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify --no-gpg-sign -m "--wip-- [skip ci]"'
 alias p="pnpm"
 alias px="pnpm dlx"
+alias pd="pnpm dev"
 alias v="nvim"
 alias vim="nvim"
 alias lg="lazygit"
